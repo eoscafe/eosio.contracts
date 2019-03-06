@@ -322,6 +322,9 @@ namespace eosiosystem {
          void unregprod( const name producer );
 
          [[eosio::action]]
+         void deregprod( const name producer );
+      
+         [[eosio::action]]
          void setram( uint64_t max_ram_size );
          [[eosio::action]]
          void setramrate( uint16_t bytes_per_block );
