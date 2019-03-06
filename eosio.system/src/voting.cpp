@@ -86,7 +86,7 @@ namespace eosiosystem {
        _producers.erase(itr);
    }
    
-   void system_contract::deregprod( const name producer ) {
+   void system_contract::unregprod( const name producer ) {
       require_auth( producer );
 
       const auto& prod = _producers.get( producer.value, "producer not found" );
